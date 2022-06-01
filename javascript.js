@@ -1,3 +1,29 @@
+let home = document.getElementById('home');
+let resume = document.getElementById('about');
+let about = document.getElementById('resume');
+let apps = document.getElementById('apps');
+let contact = document.getElementById('contact');
+
+home.addEventListener("click", reveal);
+resume.addEventListener("click", reveal);
+about.addEventListener("click", reveal);
+apps.addEventListener("click", reveal);
+contact.addEventListener("click", reveal);
+
+function reveal(e) {
+  let targetChoice = e.target.id 
+  hideTab(targetChoice)
+  showTab(targetChoice)
+}
+
+function showTab() {
+  switch (expression) {
+  }
+}
+
+function hideTab() {
+
+}
 function createBubble() {
     const section = 
           document.querySelector("Section");
@@ -18,3 +44,4 @@ function createBubble() {
     }, 4000);
 }
 setInterval(createBubble, 100);
+
