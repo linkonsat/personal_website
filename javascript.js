@@ -5,8 +5,7 @@ let apps = document.getElementById('apps');
 let contact = document.getElementById('contact');
 
 let homePage = document.getElementById('home_page');
-let resumePage = document.getElementById('about_page');
-let aboutPage = document.getElementById('resume_page');
+let aboutPage = document.getElementById('about_page');
 let appsPage = document.getElementById('apps_page');
 let contactPage = document.getElementById('contact_page');
 
@@ -18,26 +17,25 @@ contact.addEventListener("click", reveal);
 
 function reveal(e) {
   let targetChoice = e.target.id 
-  hideTab(targetChoice)
   showTab(targetChoice)
 }
 
 function showTab(choice) {
   switch (choice) {
     case "home":
-      console.log(homePage)
+      hideTab(choice)
       homePage.style.display = "block"
       break
     case "about":
+      hideTab(choice)
       aboutPage.style.display = "block"
       break;
-    case "resume":
-      resumePage.style.display = "block"
-      break;
     case "apps":
+      hideTab(choice)
       appsPage.style.display = "block"
       break;
     case "contact":
+      hideTab(choice)
       contactPage.style.display = "block"
       break;
   }
@@ -46,7 +44,6 @@ function showTab(choice) {
 function hideTab(choice) {
       homePage.style.display = "none"
       aboutPage.style.display = "none"
-      resumePage.style.display = "none"
       appsPage.style.display = "none"
       contactPage.style.display = "none"
 }

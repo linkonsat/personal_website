@@ -241,22 +241,43 @@ body,html{
     }
   }
 
-  .home_page {
+  a:visited {
+    color: rgb(185, 184, 184);
+    text-decoration: none;
+  }
+  a:link {
+    color: rgb(185, 184, 184);
+    text-decoration: none;
+  }
 
+  .home_page {
+    height: auto;
   }
 
   .about_page {
     display: none;
+    height: auto;
   }
 
   .resume_page {
     display: none;
+    height: auto;
   }
 
   .apps_page {
     display: none;
+    height: auto
   }
 
   .contact_page {
     display: none;
+    height: auto;
+  }
+
+  .game_samples {
+    display: grid;
+    color: white;
+    justify-items: center;
+    column-count: 2;
+    grid-template-columns: 1fr 1fr;
   }
